@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Freepto-lb by AvANa-BBS</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Freepto-lb</h1>
+        <p>Encrypted GNU/Linux OS (based on Debian Wheezy) which can be installed on USB flash drive. Freepto is designed for encrypt your communications (OTR, GPG, SSL), carry your documents in secure way (LUKS) and save your anonymity (TOR, OPENVPN).</p>
+
+        <p class="view"><a href="https://github.com/AvANa-BBS/freepto-lb">View the Project on GitHub <small>AvANa-BBS/freepto-lb</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/AvANa-BBS/freepto-lb/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/AvANa-BBS/freepto-lb/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/AvANa-BBS/freepto-lb">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="how-to-build-your-freepto" class="anchor" href="#how-to-build-your-freepto"><span class="octicon octicon-link"></span></a>How to build your freepto:</h2>
+
+<h3>
+<a name="chroot-debian-sid" class="anchor" href="#chroot-debian-sid"><span class="octicon octicon-link"></span></a>Chroot Debian Sid</h3>
+
+<ol>
+<li>
+<p>Make chroot:</p>
+
+<p>$ sudo debootstrap --include=debian-keyring,debian-archive-keyring,cryptsetup,live-build,git,ca-certificates --arch i386 sid ~/freepto-lb/</p>
+</li>
+<li>
+<p>User chroot:</p>
+
+<p>$ sudo chroot ~/freepto-lb /bin/bash</p>
+</li>
+</ol><h3>
+<a name="using-cache-for-apt-if-you-use-a-non-chroot-debian-sid" class="anchor" href="#using-cache-for-apt-if-you-use-a-non-chroot-debian-sid"><span class="octicon octicon-link"></span></a>Using cache for APT (if you use a non-chroot debian sid):</h3>
+
+<ol>
+<li>
+<p>Install apt-cacher-ng</p>
+
+<p>$ apt-get install apt-cacher-ng</p>
+
+<p>$ /etc/init.d/apt-cacher-ng start</p>
+</li>
+<li>
+<p>Set http_proxy:</p>
+
+<p>$ export http_proxy=http://localhost:3142/</p>
+</li>
+</ol><h3>
+<a name="build" class="anchor" href="#build"><span class="octicon octicon-link"></span></a>Build</h3>
+
+<ol>
+<li>
+<p>Make your build.img</p>
+
+<p>$ git clone <a href="https://github.com/AvANa-BBS/freepto-lb.git">https://github.com/AvANa-BBS/freepto-lb.git</a></p>
+
+<p>$ cd freepto-lb</p>
+
+<p>$ lb config &amp;&amp; lb build</p>
+</li>
+</ol><h3>
+<a name="make-freepto" class="anchor" href="#make-freepto"><span class="octicon octicon-link"></span></a>Make Freepto</h3>
+
+<ol>
+<li>
+<p>Use "dmesg" to identify the usb device:</p>
+
+<p>$ dmesg</p>
+</li>
+<li>
+<p>Run makefreepto</p>
+
+<p>$ bash makefreepto -h</p>
+
+<p>$ bash makefreepto -i binary.img -p myS3cr3t#luksp4ssw0rd /dev/sdX</p>
+</li>
+</ol><h3>
+<a name="read-documentation" class="anchor" href="#read-documentation"><span class="octicon octicon-link"></span></a>Read Documentation</h3>
+
+<p><a href="https://we.riseup.net/avana/freepto-docs">https://we.riseup.net/avana/freepto-docs</a></p>
+
+<p><a href="http://avana.forteprenestino.net/freepto">http://avana.forteprenestino.net/freepto</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/AvANa-BBS">AvANa-BBS</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
