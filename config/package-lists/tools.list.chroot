@@ -16,6 +16,8 @@ secure-delete
 gnome-disk-utility
 parted
 gparted
+python-parted
+python-pyudev
 
 # mouse
 xserver-xorg-input-synaptics
