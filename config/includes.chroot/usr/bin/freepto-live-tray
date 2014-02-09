@@ -73,7 +73,7 @@ def get_message(key, lang=None):
 ### Check-persistence {{{
 def get_root_device():
     try:
-        return check_output(["check-persistence", "get-root-device"])
+        return check_output(["check-persistence", "get-root-device"]).strip()
     except CalledProcessError:
         return None
 
