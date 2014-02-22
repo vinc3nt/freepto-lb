@@ -12,6 +12,11 @@ python-twisted
 python-lzma
 wmctrl
 
+# Apparmor
+apparmor
+apparmor-profiles
+apparmor-utils
+
 ## deb.freepto.mx
 freepto-passwords-changer
 tomb
