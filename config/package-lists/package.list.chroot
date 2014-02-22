@@ -1,10 +1,14 @@
 linux-image-amd64
 linux-image-486
 
-# SO
-aptitude
+# Firmware
 firmware-linux-free
 firmware-linux-nonfree
+broadcom-sta-common
+firmware-b43-installer
+
+# SO
+aptitude
 user-setup
 sudo
 cryptsetup
