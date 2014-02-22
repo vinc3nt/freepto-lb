@@ -155,6 +155,8 @@ lb config noauto \
     boot=live \
     config \
     noeject \
+    apparmor=1 \
+    security=apparmor \
     persistence-encryption=luks \
     persistence-media=removable-usb \
     username=$USERNAME \
