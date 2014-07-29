@@ -43,3 +43,133 @@ Pin-Priority: -1
 Package: minissdpd
 Pin: version *
 Pin-Priority: -1
+
+
+# DEB MULTIMEDIA PINNING
+Package: *
+Pin: origin www.debian.multimedia.org
+Pin-Priority: 10
+
+Package: libavcodec53
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libavcodec54
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libavformat53
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libavformat54
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libavutil51
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libdca0
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libdvdcss2
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libfaac0
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libmp3lame0
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libpostproc52
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libswscale2
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libtag1-vanilla
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libtagc0
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libx264-124
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libx264-130
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libx264-132
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libxvidcore4
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libaacplus2
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libfdk-aac0
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: gstreamer0.10-ffmpeg
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libtag1c2a
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libvlc5
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libvlccore5
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: vlc
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: vlc-data
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: vlc-plugin-notify
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: vlc-nox
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: vlc-plugin-pulse
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: w32codecs
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: deb-multimedia-keyring
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
+
+Package: libvamp-hostsdk3
+Pin: origin www.debian-multimedia.org
+Pin-Priority: 1000
