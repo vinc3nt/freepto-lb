@@ -25,3 +25,6 @@ python-tortp
 
 ## freepto-specific tools
 freepto-usb-utils
+
+## truecrypt deprecation wrapper
+truecrypt-anche-no
