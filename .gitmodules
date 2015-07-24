@@ -23,3 +23,6 @@
 [submodule "pkgs/tomb"]
 	path = pkgs/tomb
 	url = https://github.com/avana-bbs/Tomb
+[submodule "pkgs/tortp_stem"]
+	path = pkgs/tortp_stem
+	url = https://github.com/vinc3nt/stem-tortp
